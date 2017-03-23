@@ -40,4 +40,5 @@ public class GameTest {
     assertEquals(testGame.getCurrentSquad(), testGame.getSquad(2));
   }
 
+  
 }

@@ -40,5 +40,16 @@ public class SquadTest {
     assertEquals(true, testSquad.getHeros().contains(testHero2));
   }
 
-
+  @Test
+  public void chooseHero_getsSpecificHero_Hero() {
+    Game testGame = new Game();
+    Squad s1 = testGame.getSquad(1);
+    Hero testHero = new Hero("Bob the Barbarian", 10, 8);
+    Hero testHero2 = new Hero("Large Marge", 10, 8);
+    Hero testHero3 = new Hero("Rygn", 10, 8);
+    s1.addHero(testHero);
+    s1.addHero(testHero2);
+    s1.addHero(testHero3);
+    assertEquals(testHero2, s1.chooseHero(2));
+  }
 }

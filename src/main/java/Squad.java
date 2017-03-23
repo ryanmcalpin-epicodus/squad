@@ -24,4 +24,8 @@ public class Squad {
   public void setName(String name) {
     mName = name;
   }
+
+  public Hero chooseHero(int heroNumber) {
+    return mHeros.get(heroNumber - 1);
+  }
 }
